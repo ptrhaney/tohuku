@@ -107,7 +107,7 @@ require([
 
   // define the earthquakes layer
   const earthquakeLayer = new CSVLayer({
-    url: "./earthquake_data_complete1973.csv",
+    url: "./tohuku.csv",
     elevationInfo: exaggeratedElevation,
     screenSizePerspectiveEnabled: false,
     renderer: {
@@ -133,8 +133,8 @@ require([
           field: "mag",
           axis: "all",
           stops: [
-            { value: 5.5, size: 70000, label: "<15%" },
-            { value: 7, size: 250000, label: "25%" }
+            { value: 5.5, size: 20000, label: "<15%" },
+            { value: 7, size: 40000, label: "25%" }
           ]
         },
         {
